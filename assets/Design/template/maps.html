@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <title>百度地图API自定义地图</title>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密匙"></script>
+  </head>
+  
+  <body>
+    <!--百度地图容器-->
+    <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    <p style="color:red;font-weight:600">地图生成工具基于百度地图JS api v2.0版本开发，使用请申请密匙。
+      <a href="http://developer.baidu.com/map/index.php?title=jspopular/guide/introduction" style="color:#2f83c7" target="_blank">了解如何申请密匙</a>
+      <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank">申请密匙</a>
+    </p>
+  </body>
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(104.077869,30.66667),14);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"Toby Flags 南门桐梓林店",title:"Toby Flags",imageOffset: {width:0,height:3},position:{lat:30.618514,lng:104.069843}},
+        {content:"Toby Flags 北门交大店",title:"Toby Flags",imageOffset: {width:0,height:3},position:{lat:30.70263,lng:104.069731}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("./images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+      var labels = [
+        {position:{lng:104.069843,lat:30.700988},content:"二环快速公交"},
+        {position:{lng:104.076567,lat:30.701225},content:"城北客运站(公交站)"}
+      ];
+      for(var index = 0; index < labels.length; index++){
+        var opt = { position: new BMap.Point(labels[index].position.lng,labels[index].position.lat )};
+        var label = new BMap.Label(labels[index].content,opt);
+        map.addOverlay(label);
+      };
+      var plOpts = [
+        {strokeColor:"#f00",strokeWeight:"4",strokeOpacity:"0.6"},
+        {strokeColor:"#00f",strokeWeight:"4",strokeOpacity:"0.6"},
+        {strokeColor:"#0ff",strokeWeight:"4",strokeOpacity:"0.6"},
+        {strokeColor:"#00f",strokeWeight:"4",strokeOpacity:"0.6"},
+        {strokeColor:"#f00",strokeWeight:"4",strokeOpacity:"0.6"},
+        {strokeColor:"#0f0",strokeWeight:"4",strokeOpacity:"0.6"}
+      ];
+      var plPath = [
+        [
+          new BMap.Point(104.073328,30.621354),
+          new BMap.Point(104.073364,30.620095),
+          new BMap.Point(104.070382,30.620087),
+          new BMap.Point(104.0704,30.618394),
+          new BMap.Point(104.069825,30.618316),
+          new BMap.Point(104.069825,30.618432),
+          new BMap.Point(104.069825,30.618432),
+          new BMap.Point(104.069825,30.618417),
+          new BMap.Point(104.069825,30.618417),
+          new BMap.Point(104.069843,30.618331),
+          new BMap.Point(104.069843,30.618331),
+          new BMap.Point(104.069843,30.618331)
+        ],
+        [
+          new BMap.Point(104.073315,30.62135),
+          new BMap.Point(104.073441,30.61792),
+          new BMap.Point(104.071042,30.617834),
+          new BMap.Point(104.071024,30.617974),
+          new BMap.Point(104.070449,30.618021),
+          new BMap.Point(104.070386,30.618394),
+          new BMap.Point(104.070386,30.618401),
+          new BMap.Point(104.070386,30.618401),
+          new BMap.Point(104.070386,30.618401)
+        ],
+        [
+          new BMap.Point(104.069802,30.702583),
+          new BMap.Point(104.069834,30.702545),
+          new BMap.Point(104.069897,30.702545),
+          new BMap.Point(104.069969,30.702467),
+          new BMap.Point(104.069582,30.702269),
+          new BMap.Point(104.069156,30.70223),
+          new BMap.Point(104.069156,30.701993),
+          new BMap.Point(104.068729,30.702005),
+          new BMap.Point(104.068729,30.701974),
+          new BMap.Point(104.068325,30.701947),
+          new BMap.Point(104.068639,30.700973),
+          new BMap.Point(104.069838,30.700945),
+          new BMap.Point(104.069838,30.700945),
+          new BMap.Point(104.069838,30.700945)
+        ],
+        [
+          new BMap.Point(104.069964,30.702467),
+          new BMap.Point(104.070566,30.70289),
+          new BMap.Point(104.070562,30.703317),
+          new BMap.Point(104.071747,30.70336),
+          new BMap.Point(104.072178,30.70341),
+          new BMap.Point(104.073634,30.703398),
+          new BMap.Point(104.074716,30.703224),
+          new BMap.Point(104.076288,30.702867),
+          new BMap.Point(104.078682,30.702347),
+          new BMap.Point(104.080119,30.702125),
+          new BMap.Point(104.080119,30.702125),
+          new BMap.Point(104.080119,30.702125)
+        ],
+        [
+          new BMap.Point(104.080708,30.70072),
+          new BMap.Point(104.069744,30.700945),
+          new BMap.Point(104.069744,30.700945),
+          new BMap.Point(104.069829,30.700945)
+        ],
+        [
+          new BMap.Point(104.076275,30.702867),
+          new BMap.Point(104.076261,30.701497),
+          new BMap.Point(104.076558,30.701252),
+          new BMap.Point(104.076585,30.701205),
+          new BMap.Point(104.076589,30.701194)
+        ],
+      ];
+      for(var index = 0; index < plOpts.length; index++){
+        var polyline = new BMap.Polyline(plPath[index],plOpts[index]);
+        map.addOverlay(polyline);
+      }
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:3});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+</html>
