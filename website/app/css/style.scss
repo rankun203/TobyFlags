@@ -1,0 +1,138 @@
+@import "prestyle.scss";
+@import "sizes.scss";
+@import "colors.scss";
+@import "mixins.scss";
+
+.main-pic {
+  background: url("../images/main_pic.jpg") 0 35%;
+  background-size: cover;
+  height: 100%;
+
+  .navbar-gradient {
+    @include background-gradient(rgba(0, 0, 0, 0.3));
+    border: 0;
+
+    .logo-span {
+      background: url("../images/Logo.png") top no-repeat;
+      background-size: 120px 30px;
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      margin-top: 10px;
+    }
+
+    .nav-center {
+      display: block;
+      left: 50%;
+      position: absolute;
+      .img-logo-w30 {
+        width: 30px;
+        margin-top: 10px;
+        margin-left: -15px;
+      }
+    }
+
+    ul.navbar-right {
+      li {
+        width: 80px;
+        text-align: center;
+        font-size: 1.1em;
+
+        a {
+          color: $inverse-font-link-color;
+          border-bottom: 3px solid rgba(0, 0, 0, 0);
+        }
+        a:hover {
+          color: $inverse-font-link-hover-color;
+          border-bottom: 3px solid #ffffff;
+        }
+      }
+    }
+  }
+
+  .main-desc {
+    color: $inverse-font-color;
+
+    a {
+      color: $inverse-font-link-color;
+    }
+    a:hover {
+      color: $inverse-font-link-hover-color;
+    }
+    .title {
+      font-size: 4em;
+      text-align: center;
+      margin: 40px 0;
+    }
+    @media all {
+      .desc-text {
+        width: 90%;
+        line-height: 150%;
+        font-weight: 200;
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 1012px) {
+      .desc-text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.items {
+  img{
+    width: 100%;
+  }
+  .row {
+    margin-top: 100px;
+  }
+
+  .items-show {
+
+    .title {
+      font-size: 2.5em;
+      text-align: center;
+    }
+  }
+
+  .items-list {
+    text-align: center;
+    width: 80%;
+
+    li{
+      margin: 0 5.8%;
+    }
+  }
+
+  .words {
+    .title {
+      text-align: center;
+      margin: 50px auto 150px;
+    }
+    .item{
+      vertical-align: middle;
+    }
+    .head{
+      width: 100px;
+    }
+    .desc{
+      width: 450px;
+      margin: 20px auto;
+    }
+    .name {
+      font-size: 2em;
+    }
+    .job{
+      font-weight: 200;
+    }
+    .name, .job {
+      text-align: center;
+    }
+  }
+
+}
+
+.footer {
+  margin-top: 200px;
+}

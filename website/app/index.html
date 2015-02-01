@@ -1,43 +1,126 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <title>Toby Flags 🚩</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <link href='http://fonts.useso.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<header class="main-pic">
+    <!--Site Header-->
+    <div class="navbar navbar-default navbar-gradient" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="nav-center">
+                    <img src="images/Logo_oval.png" alt="Toby Flags" class="img-logo-w30"/>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <a href="./index.html" class="logo-span"></a>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Hostel</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-desc">
+        <div class="title"><h1>Toby Flags</h1></div>
+        <div class="center-block desc-text content">
+            <p>“Toby Flags” is a hostel which is based on different flags, you could meet different people from different countries, share your stories with us, you could enjoy the great atmosphere here, and we organize some activities, such as: English Party, Spanish Corner, Bible Club, Art Exhibition, Micro Film, Concert,Skateboard party, etc.
+                <a href="#">Welcome you guys to join us.</a></p>
+        </div>
+    </div>
+</header>
 
-  <div ng-view></div>
+<div class="container items">
+    <div class="items-show">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <img src="images/BBQ.png" alt="BBQ"/>
+            </div>
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="title"><h2>Activity</h2></div>
+                <div class="content">“Toby Flags”is a hostel which is based on different flags, you could meet different people from different countries, share your stories with us, you could enjoy the great atmosphere here, and we organize some activities, such as: English Party, Spanish Corner, Bible Club, Art Exhibition, Micro Film, Concert,Skateboard party, etc. Welcome you guys to join us.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="title"><h2>Hostel</h2></div>
+                <div class="content">“Toby Flags”is a hostel which is based on different flags, you could meet different people from different countries, share your stories with us, you could enjoy the great atmosphere here, and we organize some activities, such as: English Party, Spanish Corner, Bible Club, Art Exhibition, Micro Film, Concert,Skateboard party, etc. Welcome you guys to join us.
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <img src="images/Hostel.png" alt="Hostel"/>
+            </div>
+        </div>
+    </div>
+    <div class="row items-list center-block">
+        <ul class="list-inline">
+            <li class="col-md-1"><img src="images/Study.png" alt="Read"/><span>Read</span></li>
+            <li class="col-md-1"><img src="images/Exercise.png" alt="Exercise"/><span>Exercise</span></li>
+            <li class="col-md-1"><img src="images/Rest.png" alt="Relax"/><span>Relax</span></li>
+            <li class="col-md-1"><img src="images/Studio.png" alt="Studio"/><span>Studio</span></li>
+            <li class="col-md-1"><img src="images/MicroLandscape.png" alt="Micro Landscape"/><span>Micro Landscape</span></li>
+        </ul>
+    </div>
+    <div class="row words">
+        <div class="title"><h2>Travellers like us</h2></div>
+        <div class="item center-block">
+            <div class="arrow-left col-xs-1"><img src="images/svg/arrow-left.svg" alt="left"/></div>
+            <div class="middle col-xs-10">
+                <div class="center-block">
+                    <div class="head center-block">
+                        <img class="img-circle" src="images/head1.jpg" alt="Kun Ran"/>
+                    </div>
+                    <div class="desc center-block content">
+                        “Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I’d like to come to Toby Flags when I go to Chengdu next time.”
+                    </div>
+                    <div class="name center-block">Kun Ran</div>
+                    <div class="job center-block">AN INTENSE PERSON</div>
+                </div>
+            </div>
+            <div class="arrow-right col-xs-1"><img src="images/svg/arrow-right.svg" alt="right"/></div>
+        </div>
+        <div class="dots"></div>
+    </div>
+</div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+<div class="footer container">
+    <footer class="row">
+        <div class="col-md-4">
+            <h3 class="title">Links</h3>
+            <div class="content">Toby Flags at 58</div>
+        </div>
+        <div class="col-md-4">
+            <h3 class="title">Contact us</h3>
+            <div class="content">Wechat Tobyflags</div>
+        </div>
+        <div class="col-md-4">
+            <h3 class="title">About us</h3>
+            <div class="content">Toby Flags started in early of 2014 as a hostel close to the Southwest Jiaotong University. in November, we started another hostel in south part.</div>
+        </div>
+    </footer>
+</div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/retina.js/dist/retina.js"></script>
+<script src="bower_components/slick.js/slick/slick.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

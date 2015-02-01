@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>BBQ</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="BBQ" sketch:type="MSArtboardGroup">
+            <g sketch:type="MSLayerGroup" transform="translate(51.000000, 65.000000)">
+                <g id="烤架-+-高光-+-烤肉串" transform="translate(122.000000, 156.000000)" sketch:type="MSShapeGroup">
+                    <g id="烤架" transform="translate(0.000000, 6.555066)">
+                        <path d="M0,14.7488987 C0,14.7488987 20.8415381,54.7251247 62.0813466,63.9118943 L108.387925,63.9118943 C149.097004,54.7464712 171,14.7702452 171,14.7702452 L0,14.7488987 Z" id="Path-3" stroke="#333333" fill="#333333"></path>
+                        <path d="M61.7727273,63.5022026 L17.1818182,173.709251" id="Line" stroke="#333333" stroke-width="10" stroke-linecap="square"></path>
+                        <path d="M108.409091,63.5022026 L148.909091,158.960352" id="Line" stroke="#333333" stroke-width="10" stroke-linecap="square"></path>
+                        <path d="M35.5909091,129.872247 L135.409091,129.872247" id="Line" stroke="#333333" stroke-width="5" stroke-linecap="square"></path>
+                        <ellipse id="Oval-2" fill="#333333" cx="154.227273" cy="171.660793" rx="7.77272727" ry="7.78414097"></ellipse>
+                        <path d="M145.220113,167.31752 C148.90991,158.262082 159.245733,161.438606 159.245733,161.438606" id="Path-6" stroke="#333333" stroke-width="2"></path>
+                        <path d="M12.6818182,0.40969163 L12.6818182,13.5198238" id="Line" stroke="#333333" stroke-width="5" stroke-linecap="square"></path>
+                        <path d="M159.136364,0.40969163 L159.136364,13.5198238" id="Line" stroke="#333333" stroke-width="5" stroke-linecap="square"></path>
+                    </g>
+                    <path d="M122.455611,43.0128199 C122.455611,43.0128199 109.773792,50.1904254 124.697621,50.1904254 C139.621449,50.1904254 143.256926,40.1449787 135.818183,40.1449786 C128.379439,40.1449786 122.455611,43.0128199 122.455611,43.0128199 Z" id="高光" fill-opacity="0.797073143" fill="#FFFFFF"></path>
+                    <g id="烤肉串" transform="translate(6.545455, 0.000000)">
+                        <ellipse id="Oval-3" fill="#333333" cx="32.3181818" cy="9.01321586" rx="3.68181818" ry="9.01321586"></ellipse>
+                        <ellipse id="Oval-3" fill="#333333" cx="67.5" cy="9.01321586" rx="3.68181818" ry="9.01321586"></ellipse>
+                        <ellipse id="Oval-3" fill="#333333" cx="101.863636" cy="9.01321586" rx="3.68181818" ry="9.01321586"></ellipse>
+                        <ellipse id="Oval-3" fill="#333333" cx="137.045455" cy="9.01321586" rx="3.68181818" ry="9.01321586"></ellipse>
+                        <path d="M0.409090909,9.83259912 L158.318182,9.83259912" id="Line" stroke="#333333" stroke-width="2" stroke-linecap="square"></path>
+                    </g>
+                </g>
+                <g id="Man" transform="translate(228.000000, 0.000000)" sketch:type="MSShapeGroup" fill="#333333">
+                    <circle id="Oval-7" cx="152.5" cy="30.5" r="30.5"></circle>
+                    <rect id="Rectangle-2" x="123" y="71" width="60" height="150" rx="8"></rect>
+                    <rect id="Rectangle-3" x="130" y="201" width="39" height="181" rx="8"></rect>
+                    <path d="M146.778638,88.4166667 C136.655592,97.2916669 84.9999977,144.416668 84.9999977,144.416668 C84.9999977,144.416668 25.9749356,128.554524 6.0872396,123.059895 C2.58723936,123.059895 -2.00000002,131.869629 1.4921875,137 C20.7818793,142.194094 71.7640191,157.896673 84.9999967,161.75 C87.0399784,162.34389 89.899899,160.875 89.899899,160.875 C89.899899,160.875 152.488935,108.798178 160.44531,100.75 C168.401685,92.7018229 156.901685,79.5416665 146.778638,88.4166667 Z" id="Path-11" stroke="#FFFFFF"></path>
+                </g>
+                <g id="Man-2" transform="translate(91.500000, 191.000000) scale(-1, 1) translate(-91.500000, -191.000000) " sketch:type="MSShapeGroup" fill="#333333">
+                    <circle id="Oval-7" cx="152.5" cy="30.5" r="30.5"></circle>
+                    <rect id="Rectangle-2" x="123" y="71" width="60" height="150" rx="8"></rect>
+                    <rect id="Rectangle-3" x="130" y="201" width="39" height="181" rx="8"></rect>
+                    <path d="M146.778638,88.4166667 C136.655592,97.2916669 84.9999977,144.416668 84.9999977,144.416668 C84.9999977,144.416668 25.9749356,128.554524 6.0872396,123.059895 C2.58723936,123.059895 -2.00000002,131.869629 1.4921875,137 C20.7818793,142.194094 71.7640191,157.896673 84.9999967,161.75 C87.0399784,162.34389 89.899899,160.875 89.899899,160.875 C89.899899,160.875 152.488935,108.798178 160.44531,100.75 C168.401685,92.7018229 156.901685,79.5416665 146.778638,88.4166667 Z" id="Path-11" stroke="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

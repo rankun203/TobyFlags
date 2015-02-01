@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Hostel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Hostel" sketch:type="MSArtboardGroup" fill="#333333">
+            <g id="Sleeping-Man" sketch:type="MSLayerGroup" transform="translate(45.000000, 136.000000)">
+                <g id="Bed" sketch:type="MSShapeGroup">
+                    <path d="M0,10.9030071 C0,-2.30100217 37.9785156,-2.30100259 37.9785156,10.9030071 L37.9785156,241 L0,241 L0,10.9030071 Z" id="Path-13"></path>
+                    <path d="M192.694214,-16.4563378 C192.694214,-37.6175814 230.672729,-37.617582 230.672729,-16.4563378 L230.672729,352.305786 L192.694214,352.305786 L192.694214,-16.4563378 Z" id="Path-13" transform="translate(211.683471, 159.989258) rotate(-90.000000) translate(-211.683471, -159.989258) "></path>
+                    <path d="M384.021484,106.776754 C384.021484,99.0744154 422,99.0744152 422,106.776754 L422,241 L384.021484,241 L384.021484,106.776754 Z" id="Path-13"></path>
+                </g>
+                <g id="Man" transform="translate(52.000000, 51.000000)" sketch:type="MSShapeGroup">
+                    <path d="M199.010742,-15.5453321 C199.010742,-43.1487428 236.989258,-42.5145057 236.989258,-15.5453321 L236.989258,154.713267 C236.989258,179.468309 199.010742,181.343766 199.010742,154.713267 L199.010742,-15.5453321 Z" id="Path-13" transform="translate(218.000000, 68.989258) rotate(-90.000000) translate(-218.000000, -68.989258) "></path>
+                    <path d="M8,67.2578125 C14.2954103,67.2578108 81,67.2578125 81,67.2578125 L81,28.2578125 C81,12.135254 107.176956,21.1352539 107.176956,28.2578125 C107.176956,35.3803711 107.176955,87.2578125 107.176955,87.2578125 C107.176955,87.2578125 21.0000001,87.7578108 8,87.7578125 C-5.00000013,87.7578142 1.70458974,67.2578142 8,67.2578125 Z" id="Path-17"></path>
+                    <circle id="Oval-7" cx="42.5" cy="30.5" r="30.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
