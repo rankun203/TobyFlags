@@ -1,7 +1,7 @@
-@import "prestyle.scss";
-@import "sizes.scss";
-@import "colors.scss";
-@import "mixins.scss";
+@import "prestyle";
+@import "sizes";
+@import "colors";
+@import "mixins";
 
 .main-pic {
   background: url("../images/main_pic.jpg") 0 35%;
@@ -84,15 +84,13 @@
   img{
     width: 100%;
   }
-  .row {
-    margin-top: 100px;
-  }
-
   .items-show {
-
     .title {
       font-size: 2.5em;
       text-align: center;
+    }
+    .row {
+      margin-top: 100px;
     }
   }
 
@@ -105,29 +103,40 @@
     }
   }
 
-  .words {
-    .title {
-      text-align: center;
-      margin: 50px auto 150px;
+  #homepage-quotes.words {
+    margin-top: 200px;
+    text-align: center;
+    h2.quotes-block-head {
+      margin-bottom: 100px;
     }
-    .item{
-      vertical-align: middle;
+    .swiper-container {
+      margin: 0 auto 50px;
+      .quote-box {
+        img {
+          width: 150px;
+          height: 150px;
+          display: inline-block;
+          border: 5px solid $avatar-border-color;
+        }
+        p.content{
+          width: 700px;
+          margin: 50px auto;
+        }
+        p.content::before, p.content::after {
+          content: '"';
+        }
+        span.job{
+          color: $color-gray-darker;
+        }
+      }
     }
-    .head{
-      width: 100px;
+    .arrow {
+      display: inline-block;
+      margin-top: 150px;
+      padding: 30px;
     }
-    .desc{
-      width: 450px;
-      margin: 20px auto;
-    }
-    .name {
-      font-size: 2em;
-    }
-    .job{
-      font-weight: 200;
-    }
-    .name, .job {
-      text-align: center;
+    .arrow:hover {
+      cursor: pointer;
     }
   }
 
@@ -135,4 +144,25 @@
 
 .footer {
   margin-top: 200px;
+  background-color: $color-dark-deep;
+  color: $inverse-font-color;
+  .box {
+    margin-top: 50px;
+  }
+  .about-us {
+    color: $color-gray-darker;
+  }
+  .total-guests{
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    line-height: 200px;
+
+    .num{
+      font-size: 2.0em;
+      border-bottom: 1px dashed;
+    }
+  }
 }

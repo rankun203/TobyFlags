@@ -8,6 +8,9 @@ html, body {
   font-family: "Maven Pro", "Open Sans", "Droid Sans", Verdana, Arial, Helvetica, sans-serif;
   font-size: 1.4em; }
 
+.article {
+  font-size: 1.2em; }
+
 .main-pic {
   background: url("../images/main_pic.jpg") 0 35%;
   background-size: cover;
@@ -67,34 +70,59 @@ html, body {
 
 .items img {
   width: 100%; }
-.items .row {
-  margin-top: 100px; }
 .items .items-show .title {
   font-size: 2.5em;
   text-align: center; }
+.items .items-show .row {
+  margin-top: 100px; }
 .items .items-list {
   text-align: center;
   width: 80%; }
   .items .items-list li {
     margin: 0 5.8%; }
-.items .words .title {
-  text-align: center;
-  margin: 50px auto 150px; }
-.items .words .item {
-  vertical-align: middle; }
-.items .words .head {
-  width: 100px; }
-.items .words .desc {
-  width: 450px;
-  margin: 20px auto; }
-.items .words .name {
-  font-size: 2em; }
-.items .words .job {
-  font-weight: 200; }
-.items .words .name, .items .words .job {
+.items #homepage-quotes.words {
+  margin-top: 200px;
   text-align: center; }
+  .items #homepage-quotes.words h2.quotes-block-head {
+    margin-bottom: 100px; }
+  .items #homepage-quotes.words .swiper-container {
+    margin: 0 auto 50px; }
+    .items #homepage-quotes.words .swiper-container .quote-box img {
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      border: 5px solid #E6E9EB; }
+    .items #homepage-quotes.words .swiper-container .quote-box p.content {
+      width: 700px;
+      margin: 50px auto; }
+    .items #homepage-quotes.words .swiper-container .quote-box p.content::before, .items #homepage-quotes.words .swiper-container .quote-box p.content::after {
+      content: '"'; }
+    .items #homepage-quotes.words .swiper-container .quote-box span.job {
+      color: #AAAAAA; }
+  .items #homepage-quotes.words .arrow {
+    display: inline-block;
+    margin-top: 150px;
+    padding: 30px; }
+  .items #homepage-quotes.words .arrow:hover {
+    cursor: pointer; }
 
 .footer {
-  margin-top: 200px; }
+  margin-top: 200px;
+  background-color: #2e3234;
+  color: #F5F5F5 !important; }
+  .footer .box {
+    margin-top: 50px; }
+  .footer .about-us {
+    color: #AAAAAA; }
+  .footer .total-guests {
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    line-height: 200px; }
+    .footer .total-guests .num {
+      font-size: 2.0em;
+      border-bottom: 1px dashed; }
 
 /*# sourceMappingURL=style.css.map */

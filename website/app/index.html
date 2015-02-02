@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <!--Google Fonts-->
     <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
@@ -76,41 +78,66 @@
             <li class="col-md-1"><img src="images/MicroLandscape.png" alt="Micro Landscape"/><span>Micro Landscape</span></li>
         </ul>
     </div>
-    <div class="row words">
-        <div class="title"><h2>Travellers like us</h2></div>
-        <div class="item center-block">
-            <div class="arrow-left col-xs-1"><img src="images/svg/arrow-left.svg" alt="left"/></div>
-            <div class="middle col-xs-10">
-                <div class="center-block">
-                    <div class="head center-block">
-                        <img class="img-circle" src="images/head1.jpg" alt="Kun Ran"/>
-                    </div>
-                    <div class="desc center-block content">
-                        "Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I'd like to come to Toby Flags when I go to Chengdu next time."
-                    </div>
-                    <div class="name center-block">Kun Ran</div>
-                    <div class="job center-block">AN INTENSE PERSON</div>
+    <div id="homepage-quotes" class="words">
+        <h2 class="quotes-block-head">Travellers like us</h2>
+        <div class="testimonials row">
+            <span id="home-page-quote-left" class="arrow left col-md-1"><img src="images/svg/arrow-left.svg" alt="Left"/></span>
+            <div class="swiper-container col-md-10" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div class="quote-box">
+                    <img class="img-circle title" src="images/head1.jpg" alt="Kun Ran"/>
+                    <p class="content">Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I'd like to come to Toby Flags when I go to Chengdu next time.</p>
+                    <h4 class="name">Kun Ran</h4>
+                    <span class="job">AN INTENSE PERSON</span>
+                </div>
+                <div class="quote-box">
+                    <img class="img-circle title" src="images/head1.jpg" alt="Kun Ran"/>
+                     <p class="content">Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I'd like to come to Toby Flags when I go to Chengdu next time.</p>
+                    <h4>Kun Ran</h4>
+                    <span class="job">AN INTENSE PERSON</span>
+                </div>
+                <div class="quote-box">
+                    <img class="img-circle title" src="images/head1.jpg" alt="Kun Ran"/>
+                     <p class="content">Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I'd like to come to Toby Flags when I go to Chengdu next time.</p>
+                    <h4>Kun Ran</h4>
+                    <span class="job">AN INTENSE PERSON</span>
+                </div>
+                <div class="quote-box">
+                    <img class="img-circle title" src="images/head1.jpg" alt="Kun Ran"/>
+                     <p class="content">Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I'd like to come to Toby Flags when I go to Chengdu next time.</p>
+                    <h4>Kun Ran</h4>
+                    <span class="job">AN INTENSE PERSON</span>
+                </div>
+                <div class="quote-box">
+                    <img class="img-circle title" src="images/head1.jpg" alt="Kun Ran"/>
+                     <p class="content">Last time I came to Toby Flags was middle of 2014, I was very enjoy that period of time. I'd like to come to Toby Flags when I go to Chengdu next time.</p>
+                    <h4>Kun Ran</h4>
+                    <span class="job">AN INTENSE PERSON</span>
                 </div>
             </div>
-            <div class="arrow-right col-xs-1"><img src="images/svg/arrow-right.svg" alt="right"/></div>
+            <span id="home-page-quote-right" class="arrow right col-md-1"><img src="images/svg/arrow-right.svg" alt="Left"/></span>
         </div>
-        <div class="dots"></div>
     </div>
 </div>
 
-<div class="footer container">
-    <footer class="row">
-        <div class="col-md-4">
-            <h3 class="title">Links</h3>
-            <div class="content">Toby Flags at 58</div>
+<div class="footer">
+    <footer class="container">
+        <div class="row box">
+            <div class="col-md-3">
+                <h3 class="title">About us</h3>
+                <p class="about-us article">Toby Flags started in early of 2014 as a hostel close to the Southwest Jiaotong University. in November, we started another hostel in south part.</p>
+                <p class="author copyright">tobyflags.com 2014-2015</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="title">Links</h3>
+                <div class="content">Toby Flags at 58</div>
+            </div>
+            <div class="col-md-5">
+                <h3 class="title">Connect</h3>
+                <div class="content">Wechat Tobyflags</div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h3 class="title">Contact us</h3>
-            <div class="content">Wechat Tobyflags</div>
-        </div>
-        <div class="col-md-4">
-            <h3 class="title">About us</h3>
-            <div class="content">Toby Flags started in early of 2014 as a hostel close to the Southwest Jiaotong University. in November, we started another hostel in south part.</div>
+        <div class="title total-guests">
+            We have received <span class="num">503</span> guests!
         </div>
     </footer>
 </div>
@@ -122,5 +149,6 @@
 <script src="bower_components/retina.js/dist/retina.js"></script>
 <script src="bower_components/slick.js/slick/slick.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
