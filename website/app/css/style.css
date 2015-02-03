@@ -46,14 +46,14 @@ html, body {
         color: #EAEAEA !important;
         border-bottom: 3px solid transparent; }
       .main-pic .navbar-gradient ul.navbar-right li a:hover {
-        color: #E0E0E0 !important;
+        color: #D0D0D0 !important;
         border-bottom: 3px solid #ffffff; }
   .main-pic .main-desc {
     color: #F5F5F5 !important; }
     .main-pic .main-desc a {
       color: #EAEAEA !important; }
     .main-pic .main-desc a:hover {
-      color: #E0E0E0 !important; }
+      color: #D0D0D0 !important; }
     .main-pic .main-desc .title {
       font-size: 4em;
       text-align: center;
@@ -75,6 +75,8 @@ html, body {
   text-align: center; }
 .items .items-show .row {
   margin-top: 100px; }
+.items .items-show .icon-image {
+  padding: 0 50px 50px 50px; }
 .items .items-list {
   text-align: center;
   width: 80%; }
@@ -121,8 +123,18 @@ html, body {
     height: 200px;
     display: inline-block;
     line-height: 200px; }
-    .footer .total-guests .num {
+    .footer .total-guests a.num {
       font-size: 2.0em;
-      border-bottom: 1px dashed; }
+      text-decoration: none;
+      color: #EAEAEA !important; }
+    .footer .total-guests a.num:hover {
+      border-bottom: 1px dashed;
+      color: #D0D0D0 !important; }
+  .footer ul.links {
+    line-height: 180%; }
+  .footer a.link {
+    color: #EAEAEA !important; }
+  .footer a.link:hover {
+    color: #D0D0D0 !important; }
 
 /*# sourceMappingURL=style.css.map */
