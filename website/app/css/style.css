@@ -100,7 +100,7 @@ html, body {
     .items #homepage-quotes.words .swiper-container .quote-box p.content::before, .items #homepage-quotes.words .swiper-container .quote-box p.content::after {
       content: '"'; }
     .items #homepage-quotes.words .swiper-container .quote-box span.job {
-      color: #AAAAAA; }
+      color: #BBBBBB; }
   .items #homepage-quotes.words .arrow {
     display: inline-block;
     margin-top: 150px;
@@ -115,7 +115,10 @@ html, body {
   .footer .box {
     margin-top: 50px; }
   .footer .about-us {
-    color: #AAAAAA; }
+    color: #BBBBBB;
+    font-size: 1.2em !important; }
+  .footer h3.title {
+    margin: 40px 0 20px; }
   .footer .total-guests {
     font-size: 2em;
     text-align: center;
