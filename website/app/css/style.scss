@@ -121,11 +121,11 @@
           display: inline-block;
           border: 5px solid $avatar-border-color;
         }
-        p.content{
+        .content{
           width: 700px;
           margin: 50px auto;
         }
-        p.content::before, p.content::after {
+        .content::before, .content::after {
           content: '"';
         }
         span.job{

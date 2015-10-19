@@ -94,10 +94,10 @@ html, body {
       height: 150px;
       display: inline-block;
       border: 5px solid #E6E9EB; }
-    .items #homepage-quotes.words .swiper-container .quote-box p.content {
+    .items #homepage-quotes.words .swiper-container .quote-box .content {
       width: 700px;
       margin: 50px auto; }
-    .items #homepage-quotes.words .swiper-container .quote-box p.content::before, .items #homepage-quotes.words .swiper-container .quote-box p.content::after {
+    .items #homepage-quotes.words .swiper-container .quote-box .content::before, .items #homepage-quotes.words .swiper-container .quote-box p.content::after {
       content: '"'; }
     .items #homepage-quotes.words .swiper-container .quote-box span.job {
       color: #BBBBBB; }
